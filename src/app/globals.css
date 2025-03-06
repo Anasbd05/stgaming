@@ -12,3 +12,7 @@
   --color-text: #eee;
   --shadow-inset: 2px 2px 10px 0px #C80036 inset, -2px -2px 10px 0px #C80036 inset;
 }
+
+html {
+  scroll-behavior: smooth;
+}
