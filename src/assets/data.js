@@ -1,4 +1,6 @@
 import {Paintbrush, ShieldCheck, SwatchBook, Zap } from "lucide-react";
+import {Twitter , Linkedin ,Instagram} from 'lucide-react'
+
 
 const features = [
     {
@@ -28,3 +30,130 @@ const features = [
 ];
 
 export default features;
+
+export const reviews = [
+    {
+        name: "Alex Johnson",
+        username: "alex_j",
+        profileLink: "#",
+        comment: "Amazing AI! Transformed my boring room into a dream gaming setup in seconds.",
+        socialMedia :<Instagram className=' text-red-400' />
+
+    },
+    {
+        name: "Sarah Miller",
+        username: "sarah_m",
+        profileLink: "#",
+        comment: "Love the designs! Would be great to have more customization options.",
+        socialMedia : <Linkedin className=" text-sky-500"/>
+    },
+    {
+        name: "David Lee",
+        username: "david_l",
+        profileLink: "#",
+        comment: "Super easy to use! Now I know exactly how to set up my gaming space.",
+        socialMedia : <Twitter className=' text-blue-500' />
+        
+    },
+    {
+        name: "Emma Roberts",
+        username: "emma_r",
+        profileLink: "#",
+        comment: "Great tool! Some themes could use more detail, but overall fantastic.",
+        socialMedia : <Linkedin className=" text-sky-500"/>
+    },
+    {
+        name: "Chris Thompson",
+        username: "chris_t",
+        profileLink: "#",
+        comment: "Blown away by the AI-generated setups! Looks like something out of a pro studio.",
+        socialMedia : <Linkedin className=" text-sky-500"/>
+    },
+    {
+        name: "Sophia Kim",
+        username: "sophia_k",
+        profileLink: "#",
+        comment: "Really cool AI! Just wish the free version had more features.",
+        socialMedia :<Twitter className=' text-blue-500' />
+
+    },
+    {
+        name: "Jake Peterson",
+        username: "jake_p",
+        profileLink: "#",
+        comment: "This saved me so much time! AI nailed my dream gaming setup perfectly.",
+        socialMedia :<Twitter className=' text-blue-500' />
+
+    },
+    {
+        name: "Olivia Harris",
+        username: "olivia_h",
+        profileLink: "#",
+        comment: "The visuals are stunning! Helped me plan my entire gaming corner.",
+        socialMedia :<Instagram className=' text-red-400' />
+
+    },
+    {
+        name: "Michael Davis",
+        username: "michael_d",
+        profileLink: "#",
+        comment: "Pretty good! A few minor tweaks would make it perfect.",
+        socialMedia :<Twitter className=' text-blue-500' />
+
+    },
+    {
+        name: "Liam Wilson",
+        username: "liam_w",
+        profileLink: "#",
+        comment: "AI-generated setups are 🔥. My new gaming space looks incredible!",
+        socialMedia :<Instagram className=' text-red-400' />
+
+    },
+    {
+        name: "Ella Smith",
+        username: "ella_s",
+        profileLink: "#",
+        comment: "Very useful tool! Some themes could use more variety.",
+        socialMedia :<Instagram className=' text-red-400' />
+
+    },
+    {
+        name: "Noah Green",
+        username: "noah_g",
+        profileLink: "#",
+        comment: "Exceeded my expectations! My setup looks 10x better now.",
+        socialMedia :<Instagram className=' text-red-400' />
+
+    },
+    {
+        name: "Mia Carter",
+        username: "mia_c",
+        profileLink: "#",
+        comment: "A must-have for gamers! AI makes designing so effortless.",
+        socialMedia : <Linkedin className=" text-sky-500"/>
+    },
+    {
+        name: "Ethan Vance",
+        username: "ethan_v",
+        profileLink: "#",
+        comment: "Really cool app, but I’d love to see more lighting options.",
+        socialMedia :<Twitter className=' text-blue-500' />
+
+    },
+    {
+        name: "Ava Bennett",
+        username: "ava_b",
+        profileLink: "#",
+        comment: "Absolutely love it! Helped me visualize my dream battlestation.",
+        socialMedia : <Linkedin className=" text-sky-500"/>
+    },
+    {
+        name: "Daniel Fisher",
+        username: "daniel_f",
+        profileLink: "#",
+        comment: "Best AI tool for gaming setups! Super smooth and easy to use.",
+        socialMedia :<Twitter className=' text-blue-500' />
+
+    }
+];
+

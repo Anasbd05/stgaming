@@ -8,6 +8,7 @@ const Navbar = () => {
             <Image src={"/logo.png"} alt='' height={55} width={55} />
             <ul className='hidden md:flex gap-6'>
                 <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={"#features"}>Features</Link>
+                <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={""}>Reviews</Link>
                 <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={""}>Pricing</Link>
                 <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={""}>Faqs</Link>
             </ul>
