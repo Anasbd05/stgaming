@@ -1,6 +1,7 @@
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Pricing from "@/components/Pricing";
 import Reviews from "@/components/Reviews";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Reviews />
+      <Pricing />
 
     </div>
   );

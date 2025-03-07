@@ -157,3 +157,46 @@ export const reviews = [
     }
 ];
 
+export const pricingPlans = [
+    {
+        title: "Basic",
+        price: "$12",
+        YearlyPrice: "$99",
+        duration: "/month",
+        durationYearly: "year",
+        features: [
+            "AI-powered gaming room designs",
+            "Access to all themes",
+            "High-quality renders",
+            "Regular updates",
+            "Cancel anytime"
+        ],
+        bestFor: "Gamers who want fresh setups every month.",
+        buttonText: "Choose Monthly",
+    },
+    {
+        title: "One-Time",
+        price: "$199",
+        duration: "/lifetime",
+        features: [
+            "Lifetime access to all features",
+            "One-time payment, no renewal",
+            "All future updates included",
+            "Exclusive perks for lifetime users",
+        ],
+        bestFor: "Gamers who love endless setup changes.",
+        buttonText: "Get Lifetime Access",
+    },
+    {
+        title: "Enterprise",
+        price: "Custom",
+        features: [
+            "Unlimited AI-generated designs",
+            "Custom branding & integrations",
+            "Dedicated account manager",
+            "Priority support & feature requests",
+        ],
+        bestFor: "Businesses and content creators.",
+        buttonText: "Contact Us",
+    }
+];

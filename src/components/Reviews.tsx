@@ -5,7 +5,7 @@ import React from 'react'
 
 const Reviews = () => {
     return (
-        <div className='flex flex-col items-center py-4 md:py-12 w-full lg:py-1 bg-foreground'>
+        <div id='reviews' className='flex flex-col items-center py-4 md:py-12 w-full lg:py-14 bg-foreground'>
             <h1 className='text-4xl font-semibold tracking-tight font-header md:text-5xl text-center lg:text-7xl'>What
                 <span className='bg-gradient-to-r from-primary  to-secondary bg-clip-text text-transparent'> Gamers </span>
                 Say
