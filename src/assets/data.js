@@ -200,3 +200,45 @@ export const pricingPlans = [
         buttonText: "Contact Us",
     }
 ];
+export const faqs = [
+    {
+        question: "How does the AI transform my gaming setup?",
+        answer: "Our AI analyzes your room and generates high-quality designs based on your preferences, such as themes, lighting, and layout."
+    },
+    {
+        question: "Do I need any special equipment to use this?",
+        answer: "No special equipment is needed! Just upload a photo of your space, and our AI will handle the rest."
+    },
+    {
+        question: "Can I customize the AI-generated designs?",
+        answer: "Yes! You can tweak colors, themes, and elements to match your personal style."
+    },
+    {
+        question: "How long does it take to generate a design?",
+        answer: "Your new gaming setup is ready in seconds, thanks to our powerful AI engine."
+    },
+    {
+        question: "What themes are available?",
+        answer: "We offer a variety of themes, including futuristic, RGB, minimal, cyberpunk, and more."
+    },
+    {
+        question: "Is there a free trial?",
+        answer: "We currently do not offer a free trial, but you can explore example designs before purchasing."
+    },
+    {
+        question: "What’s the difference between the monthly and lifetime plans?",
+        answer: "The monthly plan gives you continuous access with updates, while the lifetime plan is a one-time payment for unlimited use."
+    },
+    {
+        question: "Can I use this for commercial projects?",
+        answer: "The Enterprise plan is designed for businesses, offering unlimited designs, branding options, and priority support."
+    },
+    {
+        question: "What happens if I cancel my subscription?",
+        answer: "You'll lose access to AI-generated designs and premium features, but you can resubscribe anytime."
+    },
+    {
+        question: "How do I contact support?",
+        answer: "You can reach out via our support page, and we’ll get back to you as soon as possible."
+    }
+];

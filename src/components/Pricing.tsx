@@ -13,7 +13,7 @@ const Pricing = () => {
             </p>
             <section className='grid grid-cols-1 md:grid-cols-2 px-2 md:px-1 lg:grid-cols-3 gap-8'>
                 {pricingPlans.map((pricing) => (
-                    <main className={`p-8 px-10 bg-pricing rounded-lg flex flex-col justify-between shadow-md shadow-pricing items-start ${pricing.title === "One-Time" && "border-2 border-primary"} `} key={pricing.price}>
+                    <main className={`p-8 px-10 bg-pricing rounded-lg flex flex-col  justify-between shadow-md shadow-pricing items-start ${pricing.title === "One-Time" && "border-2 border-primary"} `} key={pricing.price}>
                         <small className='py-0.5 px-4 bg-primary ml-auto text-white font-semibold rounded-full'>43% Off </small>
                         <div className="flex items-center gap-3">
                             <h2 className='text-xl my-2 font-semibold tracking-wider'>{pricing.title}</h2>
@@ -24,7 +24,7 @@ const Pricing = () => {
                         <p className='text-sm mb-3  text-gray-300'>{pricing.bestFor}</p>
                         <h1 className='text-xl my-4'>
                             <span className='font-bold text-5xl font-header'>{pricing.price}</span>
-                            <span className='text-gray-300 mx-1'>{pricing.duration}</span>
+                            <span className='text-gray-300 text-sm mx-1'>{pricing.duration}</span>
                         </h1>
 
                         <ul className='flex flex-col my-7 gap-3'>
@@ -39,7 +39,7 @@ const Pricing = () => {
                             <MoveRight className='w-5 h-5 mx-0.5 ' />
                         </button>
                         {pricing.title === "One-Time" &&
-                            <p className='text-sm  text-gray-300 '>
+                            <p className='text-xs text-center mx-auto text-gray-300 '>
                                 One-time payment, then <span className='animation-text'>it&lsquo;s yours forever</span>
                             </p>
                         }

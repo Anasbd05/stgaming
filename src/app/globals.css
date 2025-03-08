@@ -1,16 +1,22 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
-
-
-@theme {
-  --font-header: "Onest", "sans-serif";
-  --color-background: #070622;
-  --color-foreground: #0B2447;
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
   --color-primary: #C80036;
-  --color-pricing: #07233a;
   --color-secondary: #FF9C73;
   --color-accent: #FA4032;
+}
+
+@theme {
+  --color-background: #070622;
+  --color-foreground: #0B2447;
+  --color-pricing: #07233a;
   --color-text: #eeeeee;
+  --font-header: "Onest", "sans-serif";
   --shadow-inset: 2px 2px 10px 0px #C80036 inset, -2px -2px 10px 0px #C80036 inset;
 }
 
@@ -23,7 +29,7 @@ html {
   background-size: 200%;
   background-clip: text;
   color: transparent;
-  background-position: right;
+  background-position: end;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animation-text 5s infinite 12s;
