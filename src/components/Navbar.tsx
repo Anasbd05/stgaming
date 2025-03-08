@@ -14,7 +14,9 @@ const Navbar = () => {
                 <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={"#pricing"}>Pricing</Link>
                 <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={"#faq"}>FAQ</Link>
             </ul>
-            <button className='bg-primary rounded-full text-text hover:opacity-85 py-1 px-5'>Login</button>
+            <Link href={"/login"}>
+                <button className='bg-primary rounded-md text-text hover:opacity-85 py-2 px-8'>Login</button>
+            </Link>
         </nav>
     )
 }

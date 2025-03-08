@@ -13,20 +13,19 @@ const Styles = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full px-8 md:grid-cols-3">
                 {styles.map((style) => (
-                    <div className='bg-foreground flex rounded-md justify-between flex-col w-4/4' key={style.title}>
+                    <div className='bg-foreground flex rounded-md justify-between group flex-col w-4/4' key={style.title}>
                         <Image
                             alt=''
                             src={style.image}
                             height={400}
                             width={400}
-                            className='object-cover w-full rounded-md  h-80'
+                            className='object-cover w-full rounded-md p-4 group-hover:p-0  duration-500 h-80'
                         />
                         <div className="flex items-center  justify-between p-4 ">
                             <h2 className='text-xl font-bold tracking-wide underline decoration-4 underline-offset-6 decoration-primary '>{style.title}</h2>
                             <p className='text-secondary font-header'>{style.bestFor}</p>
                         </div>
                     </div>
-
                 ))}
             </div>
         </div>

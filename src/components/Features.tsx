@@ -10,7 +10,7 @@ const Features = () => {
                 and high-quality renders for the ultimate gaming experience!
             </p>
             <div className="flex md:flex-row flex-col w-5/6 gap-4 my-6 mx-auto ">
-                <div className='p-4 border-2 md:w-2/5 border-primary rounded-lg'>
+                <div className='p-8 border-2 md:w-2/5 border-primary rounded-lg'>
                     <h1 className='text-3xl font-semibold tracking-wider bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent my-4'>Why Stgaming?</h1>
                     <div className="flex flex-col gap-5">
                         <p className='text-sm leading-relaxed text-gray-300'>
@@ -26,7 +26,7 @@ const Features = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 md:w-3/5 gap-4">
                     {features.map((feature) => (
-                        <div key={feature.id} className='p-4 border flex flex-col justify-around border-primary  hover:scale-105 rounded-lg hover:shadow-[2px_4px_#C80036] duration-300'>
+                        <div key={feature.id} className='p-4 border flex flex-col justify-around border-primary   rounded-lg  duration-300'>
                             <div className="flex items-center gap-2">
                                 {feature.icon}
                                 <h1 className='text-xl font-bold font-header'>{feature.title}</h1>
