@@ -11,9 +11,9 @@ const Pricing = () => {
             <p className='text-sm my-5 max-w-lg md:max-w-xl text-center leading-relaxed '>
                 Choose a plan that fits your needs
             </p>
-            <section className='grid grid-cols-1 md:grid-cols-2 px-2 md:px-1 lg:grid-cols-3 gap-8'>
+            <section className='grid grid-cols-1 md:grid-cols-2 w-full px-6 md:px-5 lg:grid-cols-3 gap-8'>
                 {pricingPlans.map((pricing) => (
-                    <main className={`p-8 px-10 bg-pricing rounded-lg flex flex-col  justify-between shadow-md shadow-pricing items-start ${pricing.title === "One-Time" && "border-2 border-primary"} `} key={pricing.price}>
+                    <main className={`p-8 px-10 bg-pricing rounded-lg  flex flex-col  justify-between shadow-md shadow-pricing items-start ${pricing.title === "One-Time" && "border-2 border-primary"} `} key={pricing.price}>
                         <small className='py-0.5 px-4 bg-primary ml-auto text-white font-semibold rounded-full'>43% Off </small>
                         <div className="flex items-center gap-3">
                             <h2 className='text-xl my-2 font-semibold tracking-wider'>{pricing.title}</h2>

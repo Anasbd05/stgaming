@@ -4,12 +4,14 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Pricing from "@/components/Pricing";
 import Reviews from "@/components/Reviews";
+import Styles from "@/components/Styles";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Hero />
+      <Styles />
       <Features />
       <Reviews />
       <Pricing />

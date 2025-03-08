@@ -1,5 +1,14 @@
 import {Paintbrush, ShieldCheck, SwatchBook, Zap } from "lucide-react";
 import {Twitter , Linkedin ,Instagram} from 'lucide-react'
+import anime from "./animesetup.jpeg"
+import lava from "./lava.jpeg"
+import minimalist from "./minimalist.jpeg"
+import industrial from "./industrial.jpeg"
+import rgb from "./rgb.jpeg"
+import natural from "./natural.jpeg"
+import cyberpunk from "./cyberpunk.jpeg"
+import darkmode from "./darkmode.jpeg"
+import futuristic from "./Futuristic.jpeg"
 
 
 const features = [
@@ -240,5 +249,53 @@ export const faqs = [
     {
         question: "How do I contact support?",
         answer: "You can reach out via our support page, and we’ll get back to you as soon as possible."
+    }
+];
+
+export const styles = [
+    {
+        title: "Futuristic",
+        image: futuristic,
+        bestFor: "Tech Enthusiasts"
+    },
+    {
+        title: "RGB Overload",
+        image: rgb,
+        bestFor: "Gamers"
+    },
+    {
+        title: "Minimal",
+        image: minimalist,
+        bestFor: "Minimalists"
+    },
+    {
+        title: "Cyberpunk",
+        image: cyberpunk,
+        bestFor: "Urban Creatives"
+    },
+    {
+        title: "Natural",
+        image: natural,
+        bestFor: "Nature Lovers"
+    },
+    {
+        title: "Dark Mode",
+        image: darkmode,
+        bestFor: "Night Owls"
+    },
+    {
+        title: "Lava & Fire",
+        image: lava,
+        bestFor: "Bold Souls"
+    },
+    {
+        title: "Industrial",
+        image: industrial,
+        bestFor: "Simplicity Seekers"
+    },
+    {
+        title: "Anime",
+        image: anime,
+        bestFor: "Anime Fans"
     }
 ];

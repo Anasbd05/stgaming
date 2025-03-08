@@ -3,7 +3,7 @@ import features from "../assets/data"
 
 const Features = () => {
     return (
-        <div id='features' className='flex flex-col items-center py-4 md:py-12 w-full lg:py-1'>
+        <div id='features' className='flex flex-col items-center py-4 md:py-12 w-full lg:py-10'>
             <h1 className='text-4xl font-semibold tracking-tight font-header md:text-5xl text-center lg:text-7xl'>Game-Changing <span className='bg-gradient-to-r from-primary  to-secondary bg-clip-text text-transparent'>Features</span> </h1>
             <p className='text-sm my-5 max-w-lg md:max-w-xl text-center leading-relaxed '>
                 Transform your space with AI-driven designs, customizable themes,
