@@ -302,17 +302,17 @@ export const styles = [
 export const sidebarLinks = [
     { 
         name: "New Setup", 
-        link: "dashboard/new-setup" ,
+        link: "/dashboard" ,
         icon : <ImagePlus  className="text-gray-300 w-6 h-6" />
     },
     { 
         name: "My Gallery", 
-        link: "dashboard/my-gallery" ,
+        link: "/dashboard/my-gallery" ,
         icon : <Images className="text-gray-300 w-6 h-6" />
     },
     { 
         name: "Recommendation", 
-        link: "dashboard/recommendation",
+        link: "/dashboard/recommendation",
         icon : <ShoppingBag className="text-gray-300 w-6 h-6" />
      }
   ];

@@ -35,7 +35,7 @@ const Footer = () => {
                 </form>
             </section>
             <hr className='h-[1px] border-none w-full bg-neutral-500 ' />
-            <div className="flex justify-around py-4 w-full items-center">
+            <div className="flex flex-col md:flex-row gap-3 justify-around py-4 w-full items-center">
                 <p className='text-gray-50'>Copyright © 2025 - All right reserved by <span className='font-bold tracking-wide'>Stgaming</span> </p>
                 <small className='text-sm text-gray-300 tracking-wide'>Hey 🖐 it&#39;s me &nbsp;
                     <a className='underline' target='-blank' href="https://x.com/Anas_bd01">Anas</a>&nbsp;

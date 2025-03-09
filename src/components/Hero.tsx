@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <div className='md:h-screen mx-auto flex flex-col items-center  py-4 md:py-12 w-full lg:py-14  '>
-            <div className='py-1.5 shadow-inset bg-gradient-to-r text-center border border-primary flex gap-4 justify-around items-center  w-2/4 md:w-2/5 my-4 rounded-full px-4'>
+            <div className='py-1.5 shadow-inset bg-gradient-to-r text-center border border-primary flex gap-4 justify-around items-center  w-3/4 md:w-2/5 my-4 rounded-full px-4'>
                 <p className='text-sm text-accent'>-43% off with code <span className='font-semibold'>WYDAD01</span></p>
             </div>
             <h1 className='text-4xl font-semibold tracking-tight font-header md:text-5xl text-center lg:text-7xl '>Transform Your <br /> <span className='bg-gradient-to-r from-primary  to-secondary bg-clip-text text-transparent'>Gaming Setup with AI!</span></h1>
