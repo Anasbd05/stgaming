@@ -1,15 +1,22 @@
+"use client"
 import {MoveLeft} from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
+import {useRouter} from 'next/navigation'
 import React from 'react'
 
 const Login = () => {
+
+    const router = useRouter()
+
+
+
+
     return (
         <section className='h-screen flex flex-col w-4/5 sm:w-3/6 mx-auto md:w-2/5 lg:w-2/6 justify-center'>
-            <Link className='text-lg font-header flex items-center gap-2 px-3 text-center font-medium text-text hover:bg-gray-200 hover:text-black rounded-md py-2 w-20 my-3' href={"/"}>
+            <button onClick={() => router.back()} className='text-lg cursor-pointer font-header flex items-center gap-2 px-3 text-center font-medium text-text hover:bg-gray-200 hover:text-black rounded-md py-2 w-20 my-3'>
                 <MoveLeft className='w-4 h-4' />
                 Back
-            </Link>
+            </button>
             <main className="flex flex-col p-5 bg-foreground rounded-lg  ">
                 <div className="flex gap-3 items-center justify-center">
                     <Image alt="" draggable={false} src={"/logo.png"} height={50} width={50} />

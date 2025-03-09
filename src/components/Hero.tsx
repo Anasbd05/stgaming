@@ -10,7 +10,7 @@ const Hero = () => {
             <p className='text-sm my-5 max-w-lg md:max-w-xl text-center leading-relaxed '>Turn messy or empty rooms into epic gaming spaces in seconds. Upload a photo and let AI create the ultimate setup for you!</p>
             <div className='py-2 my-5 px-2 w-3/4 md:w-2/5 border border-foreground rounded-lg flex  '>
                 <input type="text" autoFocus placeholder='Email address' className='py-1 outline-none px-4 w-full' />
-                <button className='py-2 px-5 bg-gradient-to-r cursor-pointer from-primary  to-accent rounded-lg'>Subscribe</button>
+                <button className='py-2 px-5 bg-gradient-to-r cursor-pointer bg-accent text-black rounded-lg'>Subscribe</button>
             </div>
         </div>
     )

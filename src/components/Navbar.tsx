@@ -15,7 +15,7 @@ const Navbar = () => {
                 <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={"#faq"}>FAQ</Link>
             </ul>
             <Link href={"/login"}>
-                <button className='bg-primary rounded-md text-text hover:opacity-85 py-2 px-8'>Login</button>
+                <button className='bg-primary rounded-md cursor-pointer text-text hover:opacity-85 py-2 px-8'>Login</button>
             </Link>
         </nav>
     )

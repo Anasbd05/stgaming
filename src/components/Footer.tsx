@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="flex flex-col gap-5 items-center bg-foreground py-10">
             <section className='footer sm:footer-horizontal px-10'>
                 <nav>
-                    <h6 className="footer-title font-bold tracking-wide text-lg">Services</h6>
+                    <h6 className="footer-title font-bold tracking-wide text-lg">Links</h6>
                     <a className="link link-hover">Features</a>
                     <a className="link link-hover">Styles</a>
                     <a className="link link-hover">Pricing</a>
@@ -29,7 +29,7 @@ const Footer = () => {
                                 type="text"
                                 placeholder="username@site.com"
                                 className="py-1 px-3 outline-none " />
-                            <button className="bg-primary text-white font-medium tracking-wide rounded-md py-2 px-4">Subscribe</button>
+                            <button className="bg-accent text-black hover:opacity-80 font-medium tracking-wide rounded-md py-2 px-4">Subscribe</button>
                         </div>
                     </div>
                 </form>
@@ -37,7 +37,10 @@ const Footer = () => {
             <hr className='h-[1px] border-none w-full bg-neutral-500 ' />
             <div className="flex justify-around py-4 w-full items-center">
                 <p className='text-gray-50'>Copyright © 2025 - All right reserved by <span className='font-bold tracking-wide'>Stgaming</span> </p>
-                <small className='text-sm text-gray-300 tracking-wide'>Hey 🖐 it&#39;s me <a target='-blank' href="https://x.com/Anas_bd01">Anas</a> the founder wish you the best</small>
+                <small className='text-sm text-gray-300 tracking-wide'>Hey 🖐 it&#39;s me &nbsp;
+                    <a className='underline' target='-blank' href="https://x.com/Anas_bd01">Anas</a>&nbsp;
+                    the founder wish you the best
+                </small>
             </div>
         </footer>
     )

@@ -1,4 +1,4 @@
-import {Paintbrush, ShieldCheck, SwatchBook, Zap } from "lucide-react";
+import {DollarSign, ImagePlus, Images, LogOut, Paintbrush, ShieldCheck, ShoppingBag, SwatchBook, Zap } from "lucide-react";
 import {Twitter , Linkedin ,Instagram} from 'lucide-react'
 import anime from "./animesetup.jpeg"
 import lava from "./lava.jpeg"
@@ -299,3 +299,20 @@ export const styles = [
         bestFor: "Anime Fans"
     }
 ];
+export const sidebarLinks = [
+    { 
+        name: "New Setup", 
+        link: "dashboard/new-setup" ,
+        icon : <ImagePlus  className="text-gray-300 w-6 h-6" />
+    },
+    { 
+        name: "My Gallery", 
+        link: "dashboard/my-gallery" ,
+        icon : <Images className="text-gray-300 w-6 h-6" />
+    },
+    { 
+        name: "Recommendation", 
+        link: "dashboard/recommendation",
+        icon : <ShoppingBag className="text-gray-300 w-6 h-6" />
+     }
+  ];
