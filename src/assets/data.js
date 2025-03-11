@@ -1,6 +1,6 @@
-import {DollarSign, ImagePlus, Images, LogOut, Paintbrush, ShieldCheck, ShoppingBag, SwatchBook, Zap } from "lucide-react";
+import { ImagePlus, Images, Paintbrush, ShieldCheck, ShoppingBag, SwatchBook, Zap } from "lucide-react";
 import {Twitter , Linkedin ,Instagram} from 'lucide-react'
-import anime from "./animesetup.jpeg"
+import anime from "./animesetup.jpeg" 
 import lava from "./lava.jpeg"
 import minimalist from "./minimalist.jpeg"
 import industrial from "./industrial.jpeg"
@@ -8,8 +8,7 @@ import rgb from "./rgb.jpeg"
 import natural from "./natural.jpeg"
 import cyberpunk from "./cyberpunk.jpeg"
 import darkmode from "./darkmode.jpeg"
-import futuristic from "./Futuristic.jpeg"
-
+import futuristic from "./Futuristic.jpeg" 
 
 const features = [
     {
@@ -316,3 +315,121 @@ export const sidebarLinks = [
         icon : <ShoppingBag className="text-gray-300 w-6 h-6" />
      }
   ];
+
+//   products
+
+import chair from "./chair.jpg";
+import chair2 from "./chair2.jpg";
+import chair3 from "./chair3.jpg";
+import desk from "./desk.jpg";
+import desk2 from "./desk2.jpg";
+import PC_computer from "./Pcomputer.jpg";
+import PC_computer2 from "./Pcomputer2.jpg";
+import headphone from "./headphone.jpg";
+import headphone2 from "./headphone2.jpg";
+import headphone3 from "./headphone3.jpg";
+import hexagone from "./Hexagon.jpg";
+import hexagone2 from "./Hexagon2.jpg";
+import monitor from "./monitor.jpg";
+import monitor2 from "./monitor2.jpg";
+
+export const products = [
+  {
+    id: 1,
+    title: "Ergonomic Chair",
+    price: 149.99,
+    shortDesc: "Comfortable and adjustable ergonomic chair.",
+    image: chair,
+  },
+  {
+    id: 3,
+    title: "Premium Office Chair",
+    price: 199.99,
+    shortDesc: "High-quality leather office chair for professionals.",
+    image: chair3,
+  },
+  {
+    id: 4,
+    title: "Wooden Desk",
+    price: 249.99,
+    shortDesc: "Spacious and stylish wooden desk.",
+    image: desk,
+  },
+  {
+    id: 5,
+    title: "Minimalist Desk",
+    price: 199.99,
+    shortDesc: "Sleek and modern desk for small spaces.",
+    image: desk2,
+  },
+  {
+    id: 6,
+    title: "Gaming PC",
+    price: 1299.99,
+    shortDesc: "High-performance gaming PC with RGB lighting.",
+    image: PC_computer,
+  },
+  {
+    id: 7,
+    title: "Wireless Headphones",
+    price: 99.99,
+    shortDesc: "Noise-canceling wireless headphones with deep bass.",
+    image: headphone,
+  },
+  {
+    id: 8,
+    title: "Hexagonal LED Panels",
+    price: 59.99,
+    shortDesc: "Customizable LED panels for unique lighting.",
+    image: hexagone,
+  },
+  {
+    id: 9,
+    title: "Gaming Desktop",
+    price: 1599.99,
+    shortDesc: "Powerful desktop built for gaming and content creation.",
+    image: PC_computer2,
+  },
+  {
+    id: 10,
+    title: "Executive Chair",
+    price: 179.99,
+    shortDesc: "Luxurious executive chair for maximum comfort.",
+    image: chair2,
+  },
+  {
+    id: 11,
+    title: "4K Monitor",
+    price: 399.99,
+    shortDesc: "Ultra HD monitor for crystal-clear visuals.",
+    image: monitor,
+  },
+  {
+    id: 12,
+    title: "Gaming Headset",
+    price: 129.99,
+    shortDesc: "Immersive gaming headset with surround sound.",
+    image: headphone2,
+  },
+  {
+    id: 13,
+    title: "Hexagonal RGB Lights",
+    price: 69.99,
+    shortDesc: "Vibrant RGB lights to enhance your setup.",
+    image: hexagone2,
+  },
+  {
+    id: 14,
+    title: "Curved Monitor",
+    price: 349.99,
+    shortDesc: "34-inch ultra-wide curved monitor for multitasking.",
+    image: monitor2,
+  },
+  {
+    id: 15,
+    title: "Studio Headphones",
+    price: 149.99,
+    shortDesc: "Professional studio headphones with high fidelity sound.",
+    image: headphone3,
+  },
+];

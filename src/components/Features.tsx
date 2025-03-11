@@ -11,10 +11,10 @@ const Features = () => {
             </p>
             <div className="flex md:flex-row flex-col w-5/6 gap-4 my-6 mx-auto ">
                 <div className='p-8 border-2 md:w-2/5 border-primary rounded-lg'>
-                    <h1 className='text-3xl font-semibold tracking-wider bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent my-4'>Why Stgaming?</h1>
+                    <h1 className='text-3xl font-semibold tracking-wide bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent my-4'>Why Setugame?</h1>
                     <div className="flex flex-col gap-5">
                         <p className='text-sm leading-relaxed text-gray-300'>
-                            At Stgaming , we believe every gamer deserves an epic setup. Our AI-powered platform transforms
+                            At Setugame , we believe every gamer deserves an epic setup. Our AI-powered platform transforms
                             messy or empty rooms into stunning gaming spaces in seconds.
                         </p>
                         <p className='text-sm leading-relaxed text-gray-300'>

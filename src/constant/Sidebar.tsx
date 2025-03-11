@@ -11,19 +11,17 @@ const Sidebar = () => {
     const pathname = usePathname();
 
     return (
-        <section className="flex h-screen lg:fixed lg:w-1/5 flex-col justify-between bg-foreground border-r-[3px] border-pricing">
+        <section className="flex h-screen lg:fixed lg:w-1/5 flex-col justify-between bg-foreground  border-r-[3px] border-pricing">
             <div className="flex flex-col gap-8">
                 <main className="flex gap-2 border-b border-pricing items-center py-4 px-4">
                     <Image alt="Logo Stgaming" src="/logo.png" height={70} width={70} />
                     <h2 className="text-3xl font-bold text-gray-200 font-header">Stgaming</h2>
                 </main>
-
                 <ul className="flex flex-col border-pricing px-4 py-2.5 gap-2">
                     {sidebarLinks.map((item) => (
                         <li key={item.name}>
                             <Link
-                                className={`py-2.5 px-4 hover:bg-pricing flex items-center gap-3 rounded-lg ${pathname === item.link ? "bg-pricing " : ""
-                                    }`}
+                                className={`py-2.5 px-4 hover:bg-pricing flex items-center gap-3 rounded-lg ${pathname === item.link ? "bg-pricing " : ""}`}
                                 href={item.link}
                             >
                                 {item.icon}
@@ -49,7 +47,7 @@ const Sidebar = () => {
 
                     <ul className="mt-2 px-4">
                         <li>
-                            <Link href="/dashboard/subscription" className="py-2.5 px-4 hover:bg-foreground flex items-center gap-3 rounded-lg">
+                            <Link href="/dashboard/subscription" className="py-2.5 px-4 hover:bg-pricing flex items-center gap-3 rounded-lg">
                                 <BadgeCent className="w-5 h-5" />
                                 Subscription
                             </Link>

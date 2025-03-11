@@ -6,10 +6,11 @@
   default: true;
   prefersdark: false;
   color-scheme: light;
-  --color-primary: #C80036;
-  --color-secondary: #FFF455;
-  --color-accent: #30D5C8;
 }
+
+/* --color-primary: #C80036;  */
+/* --color-secondary: #FFF455; */
+/* --color-accent: #30D5C8; */
 
 @theme {
   --color-background: #070622;

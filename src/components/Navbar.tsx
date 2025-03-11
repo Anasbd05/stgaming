@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='hidden md:flex py-3  justify-between px-20 items-center  border-b border-primary   my-2'>
+            <nav className='hidden md:flex py-4  justify-between px-20 items-center  border-b border-primary   my-2'>
                 <Link className='' href={"/"}>
                     <Image src={"/logo.png"} alt='' height={55} width={55} />
                 </Link>
@@ -22,10 +22,7 @@ const Navbar = () => {
                 <Link href={"/login"} className='hidden md:flex'>
                     <button className='bg-primary rounded-md cursor-pointer text-text hover:opacity-85 py-2 px-8'>Login</button>
                 </Link>
-
                 {/* mobile */}
-
-
             </nav>
             <div onClick={() => setOpen(!open)} className={`p-6 md:hidden cursor-pointer ${open === true && "hidden "}`}>
                 <AlignJustify className='w-12 h-12 p-2 hover:bg-gray-600 rounded-lg ml-auto' />
