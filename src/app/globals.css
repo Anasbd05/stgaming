@@ -24,24 +24,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-.animation-text {
-  background: linear-gradient(to left, #C80036, #d1d5dc);
-  background-size: 200%;
-  background-clip: text;
-  color: transparent;
-  background-position: end;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animation-text 5s infinite 12s;
-}
-
-@keyframes animation-text {
-  0% {
-    background-size: 0%;
-  }
-
-  100% {
-    background-size: 200%;
-  }
-}

@@ -1,17 +1,38 @@
 "use client";
 
 import {sidebarLinks} from "@/assets/data";
-import {BadgeCent,LogOut} from "lucide-react";
+import {supabase} from "@/lib/supabase";
+import {BadgeCent,LogOut,User} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
-import React from "react";
+import React,{useEffect,useState} from "react";
 
 const Sidebar = () => {
     const pathname = usePathname();
 
+
+    const [user,setUser] = useState()
+
+    const GetUser = async () => {
+        const {data,error} = await supabase.auth.getSession()
+        if(data) {
+            console.log(data.session?.user)
+            setUser(data.session?.user)
+        } if(error) {
+            console.log('Failed to fetch data')
+        }
+    }
+    useEffect(() => {
+        GetUser()
+    },[])
+
+    // const logOut = async () => {
+    //     const {error} = await supabase.auth.si
+    // }
+
     return (
-        <section className="flex h-screen lg:fixed lg:w-1/5 flex-col justify-between bg-foreground  border-r-[3px] border-pricing">
+        <section className="flex h-screen lg:fixed lg:w-1/5 flex-col justify-around bg-black  ">
             <div className="flex flex-col gap-8">
                 <main className="flex gap-2 border-b border-pricing items-center py-4 px-4">
                     <Image alt="Logo Stgaming" src="/logo.png" height={70} width={70} />
@@ -62,11 +83,15 @@ const Sidebar = () => {
                 </details>
             </div>
 
-            <div className="flex items-center bg-pricing py-4 gap-1.5 px-4">
-                <Image src="/profile.jpg" className="rounded-full" alt="Profile picture" height={45} width={45} />
+            <div className="flex items-center border-t border-pricing py-4 gap-1.5 px-2">
+                {user && <Image className='rounded-full ' width={45} height={45} alt='' src={user.user_metadata.avatar_url || "/user.png"} />}
                 <div className="flex flex-col">
-                    <h3 className="font-medium font-header">Anas-bd</h3>
-                    <p className="text-sm text-gray-300">scofield.bd05@gmail.com</p>
+                    <h3 className="font-medium font-header">
+                        {user ? user.user_metadata.name : ""}
+                    </h3>
+                    <p className="text-sm text-gray-300">
+                        {user && user.user_metadata.email}
+                    </p>
                 </div>
             </div>
         </section>

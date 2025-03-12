@@ -1,15 +1,29 @@
 "use client"
+import {supabase} from '@/lib/supabase'
 import {AlignJustify,X} from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import React,{useState} from 'react'
+import React,{useEffect,useState} from 'react'
 
 const Navbar = () => {
     const [open,setOpen] = useState(true)
+    const [user,setUser] = useState()
+
+    const GetUser = async () => {
+        const {data,error} = await supabase.auth.getSession()
+        if(data) {
+            setUser(data.session?.user)
+        } if(error) {
+            console.log('Failed to fetch data')
+        }
+    }
+    useEffect(() => {
+        GetUser()
+    },[])
 
     return (
         <>
-            <nav className='hidden md:flex py-4  justify-between px-20 items-center  border-b border-primary   my-2'>
+            <nav className='hidden md:flex py-4  justify-between px-20 items-center  border-b border-primary'>
                 <Link className='' href={"/"}>
                     <Image src={"/logo.png"} alt='' height={55} width={55} />
                 </Link>
@@ -19,8 +33,15 @@ const Navbar = () => {
                     <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={"#pricing"}>Pricing</Link>
                     <Link className='font-header text-lg py-1 px-4 hover:bg-primary duration-300 text-text rounded-md' href={"#faq"}>FAQ</Link>
                 </ul>
-                <Link href={"/login"} className='hidden md:flex'>
-                    <button className='bg-primary rounded-md cursor-pointer text-text hover:opacity-85 py-2 px-8'>Login</button>
+                <Link href={user ? "/dashboard" : "/login"} className='hidden md:flex'>
+                    <button className='bg-primary rounded-md cursor-pointer text-text hover:opacity-85 py-2 px-8'>
+                        {user ?
+                            <div className='flex items-center gap-2'>
+                                <Image className='rounded-full ' width={25} height={25} alt='' src={user.user_metadata.avatar_url || '/user.png'} />
+                                <small className='text-sm'>{user.user_metadata.name || user.email}</small>
+                            </div>
+                            : "Login"}
+                    </button>
                 </Link>
                 {/* mobile */}
             </nav>
@@ -40,7 +61,14 @@ const Navbar = () => {
                     <Link onClick={() => setOpen(!open)} className='font-header text-lg py-1 px-20 hover:bg-primary duration-300 text-text rounded-md' href={"#pricing"}>Pricing</Link>
                     <Link onClick={() => setOpen(!open)} className='font-header text-lg py-1 px-20 hover:bg-primary duration-300 text-text rounded-md' href={"#faq"}>FAQ</Link>
                     <Link href={"/login"} className='block w-full px-4 my-10 md:hidden'>
-                        <button className='bg-primary rounded-md cursor-pointer w-full text-text hover:opacity-85 py-2'>Login</button>
+                        <button className='bg-primary rounded-md cursor-pointer w-full text-text hover:opacity-85 py-2'>
+                            {user ?
+                                <div className='flex gap-2'>
+                                    <Image className='rounded-full ' width={25} height={25} alt='' src={user.user_metadata.avatar_url} />
+                                    <small className='text-sm'>{user.user_metadata.name}</small>
+                                </div>
+                                : "Login"}
+                        </button>
                     </Link>
                 </ul>
             </div >

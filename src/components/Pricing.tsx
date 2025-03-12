@@ -40,7 +40,7 @@ const Pricing = () => {
                         </button>
                         {pricing.title === "One-Time" &&
                             <p className='text-xs text-center mx-auto text-gray-300 '>
-                                One-time payment, then <span className='animation-text'>it&lsquo;s yours forever</span>
+                                One-time payment, then <span className='border-b'>it&lsquo;s yours forever</span>
                             </p>
                         }
                     </main>
