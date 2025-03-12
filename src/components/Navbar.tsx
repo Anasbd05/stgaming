@@ -10,11 +10,9 @@ const Navbar = () => {
     const [user,setUser] = useState()
 
     const GetUser = async () => {
-        const {data,error} = await supabase.auth.getSession()
+        const {data} = await supabase.auth.getSession()
         if(data) {
             setUser(data.session?.user)
-        } if(error) {
-            console.log('Failed to fetch data')
         }
     }
     useEffect(() => {

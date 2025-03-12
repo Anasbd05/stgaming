@@ -2,13 +2,30 @@
 
 import {sidebarLinks} from "@/assets/data";
 import {supabase} from "@/lib/supabase";
-import {BadgeCent,LogOut,User} from "lucide-react";
+import {BadgeCent,LogOut} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import {usePathname} from "next/navigation";
+import {usePathname,useRouter} from "next/navigation";
 import React,{useEffect,useState} from "react";
+import {toast} from "react-toastify";
 
 const Sidebar = () => {
+
+    const router = useRouter()
+
+    const [loading,setLoading] = useState(false);
+
+    const handleLogout = async () => {
+        setLoading(true);
+        const {error} = await supabase.auth.signOut();
+        if(error) {
+            toast.error("Logout failed");
+        } else {
+            router.push('/')
+        }
+        setLoading(false);
+    };
+
     const pathname = usePathname();
 
 
@@ -17,7 +34,6 @@ const Sidebar = () => {
     const GetUser = async () => {
         const {data,error} = await supabase.auth.getSession()
         if(data) {
-            console.log(data.session?.user)
             setUser(data.session?.user)
         } if(error) {
             console.log('Failed to fetch data')
@@ -26,10 +42,6 @@ const Sidebar = () => {
     useEffect(() => {
         GetUser()
     },[])
-
-    // const logOut = async () => {
-    //     const {error} = await supabase.auth.si
-    // }
 
     return (
         <section className="flex h-screen lg:fixed lg:w-1/5 flex-col justify-around bg-black  ">
@@ -74,10 +86,15 @@ const Sidebar = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="logout" className="py-2.5 px-4 hover:bg-red-100 hover:text-red-600 flex items-center gap-3 rounded-lg">
+                            <button
+                                onClick={handleLogout}
+                                className="py-2.5 px-4 w-full flex items-center gap-3 rounded-lg 
+                       hover:bg-red-100 hover:text-red-600 transition"
+                                disabled={loading}
+                            >
                                 <LogOut className="w-5 h-5" />
-                                Logout
-                            </Link>
+                                {loading ? "Logging out..." : "Logout"}
+                            </button>
                         </li>
                     </ul>
                 </details>

@@ -385,7 +385,7 @@ export const products = [
   },
   {
     id: 9,
-    title: "Gaming Desktop",
+    title: "Gaming Pc",
     price: 1599.99,
     shortDesc: "Powerful desktop built for gaming and content creation.",
     image: PC_computer2,
