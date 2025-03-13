@@ -2,7 +2,7 @@
 
 import {sidebarLinks} from "@/assets/data";
 import {supabase} from "@/lib/supabase";
-import {BadgeCent,LogOut} from "lucide-react";
+import {BadgeCent,LogOut,UserCircle} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import {usePathname,useRouter} from "next/navigation";
@@ -35,6 +35,7 @@ const Sidebar = () => {
         const {data,error} = await supabase.auth.getSession()
         if(data) {
             setUser(data.session?.user)
+            console.log(data.session?.user)
         } if(error) {
             console.log('Failed to fetch data')
         }
@@ -88,10 +89,8 @@ const Sidebar = () => {
                         <li>
                             <button
                                 onClick={handleLogout}
-                                className="py-2.5 px-4 w-full flex items-center gap-3 rounded-lg 
-                       hover:bg-red-100 hover:text-red-600 transition"
-                                disabled={loading}
-                            >
+                                className="py-2.5 px-4 w-full flex items-center gap-3 rounded-lg cursor-pointer hover:bg-red-100 hover:text-red-600 transition"
+                                disabled={loading}>
                                 <LogOut className="w-5 h-5" />
                                 {loading ? "Logging out..." : "Logout"}
                             </button>
@@ -101,7 +100,9 @@ const Sidebar = () => {
             </div>
 
             <div className="flex items-center border-t border-pricing py-4 gap-1.5 px-2">
-                {user && <Image className='rounded-full ' width={45} height={45} alt='' src={user.user_metadata.avatar_url || "/user.png"} />}
+                {
+                    user && <Image className='rounded-full ' width={40} height={40} alt='' src={user.user_metadata.avatar_url || "/user.png"} />
+                }
                 <div className="flex flex-col">
                     <h3 className="font-medium font-header">
                         {user ? user.user_metadata.name : ""}
