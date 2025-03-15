@@ -47,10 +47,10 @@ const Sidebar = () => {
     return (
         <section className="flex h-screen lg:fixed lg:w-1/5 flex-col justify-around bg-black  ">
             <div className="flex flex-col gap-8">
-                <main className="flex gap-2 border-b border-pricing items-center py-4 px-4">
+                <Link href={"/"} className="flex gap-2 border-b border-pricing items-center py-4 px-4">
                     <Image alt="Logo Stgaming" src="/logo.png" height={70} width={70} />
                     <h2 className="text-3xl font-bold text-gray-200 font-header">Stgaming</h2>
-                </main>
+                </Link>
                 <ul className="flex flex-col border-pricing px-4 py-2.5 gap-2">
                     {sidebarLinks.map((item) => (
                         <li key={item.name}>

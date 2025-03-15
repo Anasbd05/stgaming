@@ -433,3 +433,69 @@ export const products = [
     image: headphone3,
   },
 ];
+
+
+export const Privacy_Policy = [
+        {
+            "id": 1,
+            "title": "How We Use Your Information",
+            "description": "We use the collected data to:",
+            "paragraphs": [
+                { "id": 1, "text": "Provide and improve our AI room transformation service." },
+                { "id": 2, "text": "Authenticate users and enhance security." },
+                { "id": 3, "text": "Process payments and manage subscriptions." },
+                { "id": 4, "text": "Offer customer support and troubleshoot issues." },
+                { "id": 5, "text": "Analyze trends and optimize our platform." },
+                { "id": 6, "text": "Send updates and promotional content (users can opt out anytime)." }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Data Sharing and Security",
+            "description": "We prioritize your privacy and only share data under necessary conditions.",
+            "paragraphs": [
+                { "id": 1, "text": "Third-Party Services: We may share data with payment processors, AI providers, and cloud storage services, ensuring they meet security standards." },
+                { "id": 2, "text": "Legal Compliance: We may disclose data if required by law or to protect our platform against fraud or threats." },
+                { "id": 3, "text": "Data Protection: Your data is stored securely using encryption, and access is restricted to authorized personnel only." }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "User Rights and Choices",
+            "description": "You have control over your data and can exercise the following rights:",
+            "paragraphs": [
+                { "id": 1, "text": "Access, update, or delete your account information." },
+                { "id": 2, "text": "Opt-out of marketing communications at any time." },
+                { "id": 3, "text": "Request data deletion, subject to legal obligations." },
+                { "id": 4, "text": "Manage cookie preferences through browser settings." }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Cookies and Tracking Technologies",
+            "description": "We use cookies and similar technologies to improve service functionality and user experience.",
+            "paragraphs": [
+                { "id": 1, "text": "Store user preferences and session information." },
+                { "id": 2, "text": "Track usage patterns to optimize performance." },
+                { "id": 3, "text": "Provide a seamless and personalized experience." }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Changes to This Policy",
+            "description": "We may update this Privacy Policy periodically. If significant changes occur, we will notify users via email or an in-app notice.",
+            "paragraphs": [
+                { "id": 1, "text": "We encourage users to review this policy regularly." },
+                { "id": 2, "text": "Continued use of our service after updates implies acceptance of the new terms." }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Contact Us",
+            "description": "If you have any questions or concerns about this Privacy Policy, feel free to contact us.",
+            "paragraphs": [
+                { "id": 1, "text": "Email: anastrying05@gmail.com" },
+                { "id": 2, "text": "Website: https://setugame.com" }
+            ]
+        }
+];
