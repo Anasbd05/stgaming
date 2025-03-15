@@ -438,7 +438,7 @@ export const products = [
 export const Privacy_Policy = [
         {
             "id": 1,
-            "title": "How We Use Your Information",
+            "title": "2. How We Use Your Information",
             "description": "We use the collected data to:",
             "paragraphs": [
                 { "id": 1, "text": "Provide and improve our AI room transformation service." },
@@ -451,7 +451,7 @@ export const Privacy_Policy = [
         },
         {
             "id": 2,
-            "title": "Data Sharing and Security",
+            "title": "3. Data Sharing and Security",
             "description": "We prioritize your privacy and only share data under necessary conditions.",
             "paragraphs": [
                 { "id": 1, "text": "Third-Party Services: We may share data with payment processors, AI providers, and cloud storage services, ensuring they meet security standards." },
@@ -461,7 +461,7 @@ export const Privacy_Policy = [
         },
         {
             "id": 3,
-            "title": "User Rights and Choices",
+            "title": "4. User Rights and Choices",
             "description": "You have control over your data and can exercise the following rights:",
             "paragraphs": [
                 { "id": 1, "text": "Access, update, or delete your account information." },
@@ -472,7 +472,7 @@ export const Privacy_Policy = [
         },
         {
             "id": 4,
-            "title": "Cookies and Tracking Technologies",
+            "title": "5. Cookies and Tracking Technologies",
             "description": "We use cookies and similar technologies to improve service functionality and user experience.",
             "paragraphs": [
                 { "id": 1, "text": "Store user preferences and session information." },
@@ -482,7 +482,7 @@ export const Privacy_Policy = [
         },
         {
             "id": 5,
-            "title": "Changes to This Policy",
+            "title": "6. Changes to This Policy",
             "description": "We may update this Privacy Policy periodically. If significant changes occur, we will notify users via email or an in-app notice.",
             "paragraphs": [
                 { "id": 1, "text": "We encourage users to review this policy regularly." },
@@ -491,7 +491,7 @@ export const Privacy_Policy = [
         },
         {
             "id": 6,
-            "title": "Contact Us",
+            "title": "7. Contact Us",
             "description": "If you have any questions or concerns about this Privacy Policy, feel free to contact us.",
             "paragraphs": [
                 { "id": 1, "text": "Email: anastrying05@gmail.com" },
@@ -499,3 +499,59 @@ export const Privacy_Policy = [
             ]
         }
 ];
+export const terms = [
+    {
+        id:1 ,
+        title : "1. Acceptance of Terms" ,
+        desc : "By accessing and using [Your SaaS Name] (the Service), you agree to be bound by these Terms of Use. If you do not agree, please do not use the Service."
+    },
+    {
+        id:2 ,
+        title : "2. Description of Service" ,
+        desc : "[Your SaaS Name] is an online platform that provides [brief description of what your SaaS does]. The Service is provided as is without any guarantees of availability, performance, or suitability for a particular purpose."
+    },
+    {
+        id:3 ,
+        title : "3. User Responsibilities" ,
+        paragraphs : [
+            "You must be at least 18 years old to use this Service.",
+            "You agree not to use the Service for any unlawful or unauthorized purposes.",
+            "You are responsible for maintaining the security of your account and all activity under your account.",
+        ]
+    },
+    {
+        id:4 ,
+        title : "4. Subscription and Payments" ,
+        paragraphs : [
+            "Certain features of the Service may require a paid subscription.",
+            "Payments are processed through [payment provider, e.g., Stripe].",
+            "No refunds are provided unless required by law.",
+        ]
+    },
+    {
+        id:5 ,
+        title : "5. Intellectual Property" ,
+        desc :"All content and software related to the Service are the property of [Your Name] and are protected by copyright and intellectual property laws."
+    },
+    {
+        id:6 ,
+        title : "6. Limitations of Liability" ,
+        desc : "To the maximum extent permitted by law, [Your Name] is not liable for any indirect, incidental, or consequential damages resulting from your use of the Service."
+    },
+    {
+        id:7 ,
+        title : "7. Termination" ,
+        desc : "I reserve the right to suspend or terminate access to the Service at my discretion if a user violates these Terms."
+    },
+    {
+        id:8 ,
+        title : "8. Changes to Terms" ,
+        desc : "To the maximum extent permitted by law, [Your Name] is not liable for any indirect, incidental, or consequential damages resulting from your use of the Service."
+    },
+    {
+        id:9 ,
+        title : "9. Contact" ,
+        desc : "For any questions regarding these Terms, contact me at [anastrying05@gmail.com]."
+    },
+
+]

@@ -21,7 +21,7 @@ const Privacy = () => {
                 </p>
             </div>
             <div className='flex flex-col gap-2 mt-5'>
-                <h1 className='text-2xl'>1. Information We Collect</h1>
+                <h1 className='text-xl font-medium'>1. Information We Collect</h1>
                 <h4 className='text-lg'>a. Personal Information</h4>
                 <p className='text-gray-300'>When you register for an account or use our service, we may collect the following information:</p>
                 <ul className='flex flex-col gap-2'>
@@ -45,7 +45,7 @@ const Privacy = () => {
             <main className="mt-5 flex-col flex gap-3">
                 {Privacy_Policy.map((privacy) => (
                     <div key={privacy.id} className="flex gap-2 flex-col">
-                        <h1 className="text-2xl">{privacy.title}</h1>
+                        <h1 className="text-xl font-medium">{privacy.title}</h1>
                         <p className="text-gray-300">{privacy.description}</p>
                         <ul className="flex flex-col gap-2">
                             {privacy.paragraphs.map((paragraph) => (
