@@ -45,7 +45,7 @@ const Sidebar = () => {
     },[])
 
     return (
-        <section className="flex h-screen lg:fixed lg:w-1/5 flex-col justify-around bg-black  ">
+        <section className="lg:flex h-screen hidden lg:fixed lg:w-1/5 flex-col justify-around bg-black  ">
             <div className="flex flex-col gap-8">
                 <Link href={"/"} className="flex gap-2 border-b border-pricing items-center py-4 px-4">
                     <Image alt="Logo Stgaming" src="/logo.png" height={70} width={70} />

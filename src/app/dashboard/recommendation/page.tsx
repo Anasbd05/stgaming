@@ -12,7 +12,7 @@ const page = () => {
     return (
         <section className='w-full bg-black flex'>
             <Sidebar />
-            <main className="w-4/5 flex flex-col rounded-lg px-1 ml-auto lg:my-16 ">
+            <div className="w-full lg:w-4/5 px-6 ml-auto lg:my-16 py-10 ">
                 <div className='flex w-full justify-between px-2'>
                     <h1 className='text-xl font-bold w-3/5'>Ultimate Gaming Setup Recommendations: Elevate Your Experience</h1>
                     <input value={inputSearch} onChange={(e) => setInputSearch(e.target.value)} type="text" placeholder='Search...' className='py-1 w-2/5 px-3 border border-accent outline-none rounded-lg' />
