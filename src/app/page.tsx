@@ -1,24 +1,7 @@
-import Faqs from "@/components/Faqs";
-import Features from "@/components/Features";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import Pricing from "@/components/Pricing";
-import Reviews from "@/components/Reviews";
-import Styles from "@/components/Styles";
-
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <Hero />
-      <Styles />
-      <Features />
-      <Reviews />
-      <Pricing />
-      <Faqs />
-      <Footer />
-
+      <p className="font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quas officiis, magni repellendus facere temporibus voluptatibus, nam atque ipsum consequuntur quaerat asperiores enim? Nemo pariatur molestiae delectus nam ipsa maxime. </p>
     </div>
   );
 }

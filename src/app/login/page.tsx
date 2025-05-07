@@ -1,95 +1,40 @@
-"use client"
-import {MoveLeft} from "lucide-react"
-import Image from "next/image"
-import {useRouter} from "next/navigation"
-import React,{useState} from "react"
-import {supabase} from "../../lib/supabase"
-import {toast} from "react-toastify"
+import Image from 'next/image'
+import React from 'react'
+import AuthImg from "../../../public/Abstract Curves and Colors.jpeg"
+import Logo from '@/components/Logo'
 
-const Login = () => {
-    const router = useRouter()
-    const [email,setEmail] = useState("")
-    const [loading,setLoading] = useState(false)
-
-    const loginWithGoogle = async () => {
-
-        setLoading(true)
-        const {error} = await supabase.auth.signInWithOAuth({
-            provider: "google"
-        })
-        setLoading(false)
-
-        if(error) {
-            toast.error("Error! Try again")
-        }
-    }
-
-    const loginWithEmail = async () => {
-        if(!email) {
-            toast.error("Please enter a valid email")
-            return
-        }
-        setLoading(true)
-        const {error} = await supabase.auth.signInWithOtp({email})
-        setLoading(false)
-        setEmail('')
-
-        if(error) {
-            toast.error("Error! Try again")
-        } else {
-            toast.success("Check your emails")
-        }
-    }
-
+const LoginPage = () => {
     return (
-        <section className="h-screen flex flex-col w-4/5 sm:w-3/6 mx-auto md:w-2/5 lg:w-2/6 justify-center">
-            <button
-                onClick={() => router.back()}
-                className="text-lg cursor-pointer font-header flex items-center gap-2 px-3 text-center font-medium text-text hover:bg-gray-200 hover:text-black rounded-md py-2 w-20 my-3"
-            >
-                <MoveLeft className="w-4 h-4" />
-                Back
-            </button>
-
-            <main className="flex flex-col p-5 bg-foreground rounded-lg">
-                <div className="flex gap-3 items-center justify-center">
-                    <Image alt="Logo" draggable={false} src="/logo.png" height={50} width={50} />
-                    <h2 className="text-text font-semibold text-2xl">Stgaming</h2>
+        <div className='h-screen grid grid-cols-2 relative'>
+            <main className=' relative flex w-full flex-col p-10 text-foreground '>
+                <div className='w-full h-[30%] bg-gradient-to-t from-transparent to-black/50 absolute top-0 left-0 z-10' />
+                <div className='w-full h-[40%] bg-gradient-to-b from-transparent to-black/50 absolute bottom-0 left-0 z-10' />
+                <Image src={AuthImg} alt='' fill className='w-full h-full object-cover' />
+                <div className="relative z-20 flex items-center">
+                    <Logo />
                 </div>
-
-                <div className="flex my-5 flex-col gap-4">
-                    <button
-                        onClick={loginWithGoogle}
-                        disabled={loading}
-                        className="py-2 cursor-pointer w-full flex items-center justify-center gap-4 bg-gray-200 hover:bg-neutral-400 text-black font-medium rounded-lg disabled:opacity-50"
-                    >
-                        <Image src="/google.png" alt="Google" width={25} height={25} />
-                        Sign-up with Google
-                    </button>
-
-                    <div className="divider divider-primary">OR</div>
-
-                    <div className="flex flex-col">
-                        <label className="mb-1">Email</label>
-                        <input
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            type="email"
-                            placeholder="email@example.com"
-                            className="py-1.5 mb-3 px-3 border border-gray-300 rounded-lg"
-                        />
-                        <button
-                            onClick={loginWithEmail}
-                            disabled={loading}
-                            className="py-3 cursor-pointer hover:opacity-80 w-full bg-primary text-text font-medium rounded-lg disabled:opacity-50"
-                        >
-                            {loading ? "Sending..." : "Send Magic Link"}
-                        </button>
-                    </div>
+                <div className='relative z-20 mt-auto'>
+                    <blockquote className='space-y-2'>
+                        <p className='text-lg  text-white'>
+                            &ldquo; Pictoria AI is a game changer for me. I have been able to generate high quality professional
+                            headshots within minutes. It has saved me countless hours of work and cost as well. &rdquo;
+                        </p>
+                        <footer className='text-sm text-white'>David S.</footer>
+                    </blockquote>
                 </div>
             </main>
-        </section>
+            <main className='h-screen flex flex-col items-center justify-center w-full'>
+                <h1 className='text-xl font-bold mb-8'>Login</h1>
+                <div className="flex flex-col">
+                    <label className='font-bold'>Email</label>
+                    <input type="email" placeholder='example@example.com' className='py-2 md:w-[350px]  ring ring-gray-300 px-3 rounded-md' />
+                    <button className='btn btn-neutral mt-4 py-3'>Send Magic Link</button>
+                    <hr className='w-full mt-4' />
+                    <button className='btn btn-primary mt-2 '>With Google</button>
+                </div>
+            </main>
+        </div>
     )
 }
 
-export default Login
+export default LoginPage

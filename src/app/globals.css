@@ -15,10 +15,8 @@
 @theme {
   --color-background: #070622;
   --color-foreground: #001430;
-  --color-pricing: #07233a;
-  --color-text: #eeeeee;
   --font-header: "Onest", "sans-serif";
-  --shadow-inset: 2px 2px 10px 0px #C80036 inset, -2px -2px 10px 0px #C80036 inset;
+  --font-mono: "Geist_Mono", "mono"
 }
 
 html {
