@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import AuthImg from "../../../public/Abstract Curves and Colors.jpeg"
 import Logo from '@/components/Logo'
+import {LoginForm} from '@/components/login-form'
 
 const LoginPage = () => {
     return (
@@ -24,14 +25,7 @@ const LoginPage = () => {
                 </div>
             </main>
             <main className='h-screen flex flex-col items-center justify-center w-full'>
-                <h1 className='text-xl font-bold mb-8'>Login</h1>
-                <div className="flex flex-col">
-                    <label className='font-bold'>Email</label>
-                    <input type="email" placeholder='example@example.com' className='py-2 md:w-[350px]  ring ring-gray-300 px-3 rounded-md' />
-                    <button className='btn btn-neutral mt-4 py-3'>Send Magic Link</button>
-                    <hr className='w-full mt-4' />
-                    <button className='btn btn-primary mt-2 '>With Google</button>
-                </div>
+                <LoginForm />
             </main>
         </div>
     )
