@@ -23,15 +23,17 @@ export function LoginForm({
 
 
   const loginWithGoogle = async () => {
-    const {error,data} = await supabase.auth.signInWithOAuth({
-      provider: "google"
-    })
+    const {error} = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: `${window.location.origin}/dashboard`,
+      },
+    });
     if(error) {
       console.log(error.message)
-    } else {
-      console.log(data)
     }
   }
+
 
   const loginWithEmail = async () => {
     const {error} = await supabase.auth.signInWithOtp({

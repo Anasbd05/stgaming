@@ -1,5 +1,4 @@
 "use client"
-import {Button} from '@/components/ui/button'
 import React from 'react'
 import Logout from './Authentication'
 
@@ -9,7 +8,7 @@ const LogoutBtn = () => {
         await Logout()
     }
     return (
-        <Button variant="destructive" onClick={handleLogout} >LogOut</Button>
+        <span className='text-red-500  bg-transparent' onClick={handleLogout} >Logout</span>
     )
 }
 

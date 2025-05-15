@@ -8,9 +8,9 @@ import {
   SidebarMenuButton,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import {Sparkles,User} from "lucide-react"
-import {createClient} from "@supabase/supabase-js"
+import {Sparkles} from "lucide-react"
 import {NavUser} from "./nav-user"
+import {supabase} from "@/lib/supabase"
 
 // This is sample data.
 
@@ -18,13 +18,13 @@ import {NavUser} from "./nav-user"
 
 export async function AppSidebar({...props}: React.ComponentProps<typeof Sidebar>) {
 
-  const supabase = await createClient()
-  const {data} = await supabase.auth.getUser()
 
+  const {data: {user}} = await supabase.auth.getUser()
+  console.log(user)
 
-  const user = {
-    name: data.user?.user_metadata.full_name,
-    email: data.user?.email ?? "",
+  const userr = {
+    name: user?.user_metadata.name,
+    email: user?.email ?? "",
   }
 
   return (
@@ -47,7 +47,7 @@ export async function AppSidebar({...props}: React.ComponentProps<typeof Sidebar
         <NavMain />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={user} />
+        <NavUser user={userr} />
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>

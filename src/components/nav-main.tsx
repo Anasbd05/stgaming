@@ -11,11 +11,9 @@ import Link from "next/link"
 import {usePathname} from "next/navigation"
 import {
 
-  CreditCard,
   Frame,
   Image,
   Images,
-  Settings,
   SquareTerminal,
 } from "lucide-react"
 
@@ -40,20 +38,10 @@ export function NavMain() {
       icon: Frame
     },
     {
-      title: "Billing",
-      url: "/billing",
-      icon: CreditCard
-    },
-    {
       title: "My images",
       url: "/gallary",
       icon: Images
-    },
-    {
-      title: "Settings",
-      url: "/settings",
-      icon: Settings
-    },
+    }
   ]
 
 
