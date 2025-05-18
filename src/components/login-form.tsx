@@ -9,8 +9,8 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import {Label} from "@/components/ui/label"
-import {supabase} from "../lib/supabase"
 import {useState} from "react"
+import {supabase} from "@/lib/supabase/admin"
 
 export function LoginForm({
   className,

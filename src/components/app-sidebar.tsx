@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/sidebar"
 import {Sparkles} from "lucide-react"
 import {NavUser} from "./nav-user"
-import {supabase} from "@/lib/supabase"
+import {supabase} from "@/lib/supabase/admin"
 
 // This is sample data.
 
